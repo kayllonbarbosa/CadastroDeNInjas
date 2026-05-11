@@ -15,8 +15,8 @@ import java.util.List;
 @Data // anotação Lombok - cria getts e setts automaticamente
 public class MissoesModel {
 
-    // @OneToMany
-    // @ManyToOne
+    // @OneToMany - uma missão pode ter varios ninjas
+    // @ManyToOne - um ninja tem uma unica missão
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
