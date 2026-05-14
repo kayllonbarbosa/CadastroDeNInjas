@@ -6,8 +6,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 // Entity ele transforma uma classe em uma entidade do banco de dados.
 // JPA = Java Persistence API
 @Entity
