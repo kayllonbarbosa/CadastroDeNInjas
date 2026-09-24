@@ -40,9 +40,9 @@ public class NinjaController {
         }
 
       // mostrar ninja por id (read)
-        @GetMapping("/listarID")
-        public String mostrarTodosOsNinjasPorId() {
-            return "mostrar Ninja por id";
+        @GetMapping("/listar/{id}")
+        public NinjaModel listarNinjasPorId(@PathVariable long id) {
+            return ninjaService.ListarNinjasPorId(id) ;
         }
 
         // alterar dados dos ninjas (update)
